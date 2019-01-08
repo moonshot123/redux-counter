@@ -1,3 +1,8 @@
+리액트 리덕스 연습
+
+#yarn add redux react-redux
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
