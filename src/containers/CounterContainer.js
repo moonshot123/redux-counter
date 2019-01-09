@@ -1,6 +1,6 @@
 import Counter from '../components/Counter';
 import * as actions from '../actions';
-import {connect} from 'react-redux'
+import {connect} from 'react-redux';
 
 export function getRandomColor(){
     const colors =[

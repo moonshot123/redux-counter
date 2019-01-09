@@ -6,7 +6,7 @@ const Counter = ({number,color,index,onIncrement,onDecrement,onSetColor}) => {
     return(
         <div className='Counter' 
              onClick={() => onIncrement(index)}  
-             onContxMenu = {(e) => {
+             onContextMenu = {(e) => {
                 e.preventDefault();
                 onDecrement(index);
                 }}
@@ -20,7 +20,7 @@ const Counter = ({number,color,index,onIncrement,onDecrement,onSetColor}) => {
 Counter.propTypes = {
     index:PropTypes.number,
     number:PropTypes.number,
-    color:PropTypes.color,
+    color:PropTypes.string,
     onIncrement:PropTypes.func,
     onDecrement:PropTypes.func,
     onSetColor:PropTypes.func
@@ -33,6 +33,6 @@ Counter.defaultProps = {
     onIncrement: () => console.warn('onIncrement not defined'),
     onDecrement: () => console.warn('onDecrement not defined'),
     onSetColor: () => console.warn('onSetColor not defined')
-}
+};
 
 export default Counter;
